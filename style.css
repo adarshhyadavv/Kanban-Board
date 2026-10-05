@@ -86,7 +86,7 @@ section .task-column.hover-over {
     scale: 1.05;
 }
  
-section .task-column.heading {
+section .task-column .heading {
     width: 100%;
     display: flex;
     align-items: center;
@@ -112,5 +112,4 @@ section .task-column .task button {
     outline: none;
     background-color: var(--delete-button-color);
     color: var(--primary-text-color);
-
 }
