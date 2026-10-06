@@ -11,7 +11,7 @@
         <!-- nav bar -->
         <nav>
             <div class="left">Kanban</div>
-            <div class="right"><button>Add new task</button></div>
+            <div class="right"><button id="toggle-modal">Add new task</button></div>
         </nav>
 
         <!-- board -->
@@ -21,11 +21,6 @@
                 <div class="heading">
                     <div class="left">To do</div>
                     <div class="right">Count</div>
-                </div>
-                <div draggable="true" class="task">
-                    <h2>Task 1</h2>
-                    <p>Description for task 1</p>
-                    <button>delete</button>
                 </div>
             </div>
 
@@ -46,6 +41,16 @@
         </section>
 
     </main>
+
+    <!-- modal -->
+     <div class="modal add-new-task">
+        <div class="bg"></div>
+        <div class="center">
+            <input type="text" id="task-title-input" placeholder="Task title">
+            <textarea id="task-desc-input" placeholder="Task Description"></textarea>
+            <button id="add-new-task" class="add-task-button">Add Task</button>
+        </div>
+     </div>
 
     <script src="script.js"></script>
 </body>
